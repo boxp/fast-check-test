@@ -1,0 +1,40 @@
+{
+  "name": "fast-check-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/specs/*.+(ts|tsx|js)"
+    ]
+  },
+  "dependencies": {
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.0",
+    "fast-check": "^1.4.0",
+    "jest": "^23.4.1",
+    "ts-jest": "^23.0.1"
+  }
+}
